@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sharedProfile: {fileID: 11400000, guid: f17afb2e5f3cdcc43924876a8cbbc6ed, type: 2}
-  isGlobal: 0
+  isGlobal: 1
   blendDistance: -1.3
   weight: 1
   priority: 3
@@ -2041,6 +2041,7 @@ GameObject:
   - component: {fileID: 977871940}
   - component: {fileID: 977871942}
   - component: {fileID: 977871941}
+  - component: {fileID: 977871943}
   m_Layer: 8
   m_Name: ' PostProcess Montion Blur Bloom'
   m_TagString: Untagged
@@ -2056,7 +2057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977871939}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.94, y: -0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698131336}
@@ -2087,11 +2088,30 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977871939}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &977871943
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977871939}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &994008118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2327,6 +2347,12 @@ PlayableDirector:
   - key: {fileID: -8175403778829068117, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
     value: {fileID: 0}
   - key: {fileID: 4220556293820733831, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5698084663309096489, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4697210503076931810, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2067860677347695368, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
@@ -3804,6 +3830,8 @@ PlayableDirector:
     value: {fileID: 6370812497183998017}
   - key: {fileID: -4697210503076931810, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
     value: {fileID: 7615593173291380747}
+  - key: {fileID: -2067860677347695368, guid: bea05cbe245f1124a9b7e6fe4dc00a92, type: 2}
+    value: {fileID: 977871943}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1737237631
@@ -5172,7 +5200,6 @@ GameObject:
   - component: {fileID: 7431330804623427078}
   - component: {fileID: 7431330804623427073}
   - component: {fileID: 7431330804623427072}
-  - component: {fileID: 7431330804623427080}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5189,7 +5216,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7431330804623427077}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
@@ -5207,20 +5234,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
---- !u!114 &7431330804623427080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7431330804623427077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 729ee8aca30fe4049924f14b526d3b3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 50
-  player: {fileID: 7431330804623427076}
 --- !u!1 &7615593173291380746
 GameObject:
   m_ObjectHideFlags: 0
