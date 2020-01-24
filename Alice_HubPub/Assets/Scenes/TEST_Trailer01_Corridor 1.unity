@@ -4822,8 +4822,6 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 5917532319539834312, guid: a6f9a4d8cde1d044cb069705669f206b, type: 2}
-    value: {fileID: 1549056068}
   - key: {fileID: 5957440443467720497, guid: a6f9a4d8cde1d044cb069705669f206b, type: 2}
     value: {fileID: 1402292760}
   - key: {fileID: -8037568897301418647, guid: a6f9a4d8cde1d044cb069705669f206b, type: 2}
@@ -4854,6 +4852,8 @@ PlayableDirector:
     value: {fileID: 2368265420447462397}
   - key: {fileID: 8810639287968812122, guid: a6f9a4d8cde1d044cb069705669f206b, type: 2}
     value: {fileID: 626125023}
+  - key: {fileID: 1197091742989642219, guid: a6f9a4d8cde1d044cb069705669f206b, type: 2}
+    value: {fileID: 1549056068}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2100629001
@@ -4987,7 +4987,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7431330803200725705}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2117204159
+--- !u!114 &2117204158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4999,10 +4999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395d0ed3903473444a31a8fc6b0e5cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easeType: 0
+  easeType: 22
   loopType: 2
-  number: 5
-  numberTwo: 0.5
+  number: 3
+  numberTwo: 0.3
 --- !u!33 &949557510398288509
 MeshFilter:
   m_ObjectHideFlags: 0
